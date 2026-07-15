@@ -1,15 +1,12 @@
 <?php
 $host = "localhost";
 $username = "root";
-$password = "";     
+$password = "";
 $database = "sb_admin_2";
 
 $conn = new mysqli($host, $username, $password, $database);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
-else {
-    echo "Connected successfully!";
 }
 ?>
